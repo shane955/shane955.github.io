@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Music Player</title>
+<style>
+  body {
+  background:url(images/background.png);
+  background-size:cover;
+}
+#cp {
+  margin:0 auto;
+   margin-top: 100px;
+   text-align: center;
+}
+button {
+background-color: gold;
+padding: 10px;
+font-size: 15px;
+border-style: none;
+width: 100px;
+font-weight: bold;
+color: purple;
+}
+p {
+  color: red;
+}
+</style>
+<script src="//code.jquery.com/jquery.min.js"> </script>
+<script src="app.js"></script>
+</head>
+<body>
+  <!-- Control Panel will go here -->
+  <div id="cp">
+  <button id="play">play</button>
+  <button id="Stop">stop</button>
+  <button id="pause">pause</button>
+  <button id="mute">Mute</button>
+  <button id="Unmute">Unmute</button>
+  <button id="VolUp">Volume Up</button>
+  <button id="VolDown">Volume Down</button>
+  <p id="messsage"> Waiting</p>
+
+</div>
+  <!-- Audio player will go here -->
+  <audio id="player">
+  <source src="music/song1.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
